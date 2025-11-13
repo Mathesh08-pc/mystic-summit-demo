@@ -359,11 +359,18 @@
             margin: 30px auto;
             border-radius: 15px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             color: var(--color-white);
             font-size: 1.2rem;
             border: 2px solid var(--color-blue);
+            text-align: center; /* Ensure text inside is centered */
+        }
+        
+        .map-placeholder a {
+            padding: 20px;
+            display: block; /* Make the link fill the container for a larger clickable area */
         }
 
         .social-icons {
@@ -576,11 +583,14 @@
 
             <p class="venue-info">
                 Venue: Seminar Hall 1 & 2 (ECE Block)<br>
-                SRM Valliammai Engineering College
+                **SRM Valliammai Engineering College**<br>
+                *Address: National Highway 45, Potheri, SRM Nagar, Kattankulathur, Tamil Nadu 603203, India*
             </p>
 
             <div class="map-placeholder">
-                [Google Map Placeholder for SRM VEC Location]
+                <a href="https://maps.google.com/?cid=5309688187448805524&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNl" target="_blank" style="color: var(--color-blue); text-decoration: none; font-weight: bold; font-size: 1.2rem;">
+                    <i class="fas fa-map-marker-alt"></i> Click to View Map Location
+                </a>
             </div>
             
             <div class="social-icons">
