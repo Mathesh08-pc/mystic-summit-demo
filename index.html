@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Think Fast, Talk Smart - SRM Valliammai Engineering College</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        html, body { height: 100%; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        nav {
+            background: rgba(15, 12, 41, 0.95);
+            padding: 15px 0;
+            position: sticky; top: 0; z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #ff6b35;
+            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+        }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #00d4ff, #ff6b35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-links { display: flex; gap: 10px; flex-wrap: wrap; }
+        .nav-btn {
+            background: linear-gradient(135deg, #00d4ff, #0099cc);
+            color: white; border: none;
+            padding: 10px 20px; border-radius: 25px;
+            cursor: pointer; font-weight: 600; font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 212, 255, 0.3);
+        }
+        .nav-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(0, 212, 255, 0.5); }
+        .nav-btn.active { background: linear-gradient(135deg, #ff6b35, #ff8c42); box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3); }
+        .page { display: none; min-height: calc(100% - 200px); padding: 40px 0; animation: fadeIn 0.5s ease; }
+        .page.active { display: block; }
+        @keyframes fadeIn { from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} }
+        .hero { text-align: center; padding: 60px 20px; background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 107, 53, 0.1)); border-radius: 30px; margin-bottom: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+        .hero-content { position: relative; z-index: 1; }
+        .college-name { font-size: 1.8rem; font-weight: 700; margin-bottom: 10px; color: #00d4ff; }
+        .event-title { font-family: 'Orbitron', sans-serif; font-size: 3.5rem; font-weight: 900; background: linear-gradient(135deg, #00d4ff, #ff6b35); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 20px; }
+        .tagline { font-size: 1.2rem; font-style: italic; color: #ffffff; max-width: 800px; margin: 0 auto 40px; line-height: 1.6; }
+        .cta-btn { background: linear-gradient(135deg, #ff6b35, #ff8c42); color: white; border: none; padding: 15px 40px; border-radius: 30px; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: all 0.3s ease; }
+        .cta-btn.secondary { background: linear-gradient(135deg, #00d4ff, #0099cc); }
+        .section-title { font-family: 'Orbitron', sans-serif; font-size: 2.5rem; text-align: center; margin-bottom: 40px; background: linear-gradient(135deg, #00d4ff, #ff6b35); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card { background: rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 30px; margin-bottom: 30px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(0, 212, 255, 0.3); }
+        .card-title { font-family: 'Orbitron', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 15px; color: #ff6b35; }
+        .info-list { list-style: none; padding: 0; }
+        .info-list li { padding: 15px; margin-bottom: 10px; background: rgba(0, 212, 255, 0.1); border-radius: 10px; border-left: 4px solid #00d4ff; }
+        .qr-section { text-align: center; padding: 30px; background: rgba(255,255,255,0.05); border-radius: 20px; margin: 30px 0; }
+        .qr-section img { width: 250px; height: 250px; border-radius: 10px; box-shadow: 0 6px 25px rgba(0, 212, 255, 0.4); }
+        footer { background: rgba(15, 12, 41, 0
