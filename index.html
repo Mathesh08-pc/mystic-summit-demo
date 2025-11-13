@@ -248,10 +248,24 @@
             background-size: cover;
         }
 
+        /* LOGO STYLES UPDATED HERE */
         .college-logo {
+            /* This property is kept, but the actual sizing/shaping is moved to the img selector below */
             max-width: 100px;
             margin-bottom: 20px;
         }
+        
+        header .logo-container img {
+            width: 50px; 
+            height: 50px;
+            border-radius: 50%;
+            /* This is the key change to fit the logo perfectly */
+            object-fit: cover; 
+            display: block; 
+            margin: 0; /* Override the inline style margin for clean CSS control */
+        }
+        
+        /* End of LOGO STYLES */
 
         .main-title {
             font-family: var(--font-title);
@@ -455,7 +469,7 @@
     <header>
         <div class="navbar">
             <div class="logo-container">
-                <img src="clg_name.png" alt="SRM VEC Logo" class="college-logo" style="width: 50px; height: 50px; margin: 0; border-radius: 50%;">
+                <img src="clg_name.png" alt="SRM VEC Logo" class="college-logo">
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -564,7 +578,7 @@
                 **SRM Valliammai Engineering College**<br>
                 *Address: National Highway 45, Potheri, SRM Nagar, Kattankulathur, Tamil Nadu 603203, India*
             </p>
-
+            
             <div class="social-icons">
                 <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
@@ -593,5 +607,4 @@
     </script>
     
 </body>
-    </html>
-    
+</html>
