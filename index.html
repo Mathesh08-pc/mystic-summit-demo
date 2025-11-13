@@ -324,69 +324,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         
-        /* Updated QR Container for image */
-        .qr-image-container {
-            width: 200px;
-            margin: 30px auto 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            box-shadow: 0 0 15px var(--color-blue);
-            padding: 5px; /* Added small padding to hold shadow */
-        }
-        
-        .qr-image-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-
-        /* Page 4 - Payment & Facilities */
-        .payment-info {
-            background-color: var(--color-card-bg);
-            border: 2px solid var(--color-blue);
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            margin-bottom: 40px;
-            max-width: 500px;
-            width: 100%;
-        }
-
-        /* Updated UPI QR Container for image */
-        .upi-qr-image-container {
-            width: 250px;
-            margin: 20px auto;
-            border-radius: 10px;
-            border: 5px dashed var(--color-orange);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
-        }
-        
-        .upi-qr-image-container img {
-            width: 90%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        .facility-card {
-            flex: 1 1 45%;
-            text-align: center;
-            border-color: var(--color-orange);
-        }
-        
-        .facility-card h4 {
-            font-size: 1.4rem;
-            color: var(--color-orange);
-            margin-bottom: 10px;
-        }
-
-        /* Page 5 - Contact & Venue */
+        /* Page 4 - Contact & Venue */
         .contact-list {
             list-style: none;
             padding: 0;
@@ -532,13 +470,12 @@
     <header>
         <div class="navbar">
             <div class="logo-container">
-                <img src="srm_vec_logo.png" alt="SRM VEC Logo" class="college-logo" style="width: 50px; height: 50px; margin: 0; border-radius: 50%;">
+                <img src="clg_logo_name.png" alt="SRM VEC Logo" class="college-logo" style="width: 50px; height: 50px; margin: 0; border-radius: 50%;">
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#rounds">Event Rounds</a></li>
                 <li><a href="#registration">Registration</a></li>
-                <li><a href="#payment">Payment</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -561,7 +498,7 @@
 
             <div class="button-group">
                 <a href="#rounds" class="btn">🔹 About the Event</a>
-                <a href="#registration" class="btn">🔹 Register Now</a>
+                <a href="https://forms.gle/ff5o9K8ae3QErN8E8" class="btn" target="_blank">🔹 Register Now</a>
                 <a href="#contact" class="btn">🔹 Contact Us</a>
             </div>
             
@@ -614,35 +551,64 @@
                 <ul class="list-style">
                     <li>**Team Size:** 2–3 members</li>
                     <li>**Eligibility:** Open to all departments</li>
-                    <li>**Registration Fee:** ₹100 per team</li>
+                    <li>**Registration Fee:** ₹100 per team (Payment will be collected at the event desk)</li>
                 </ul>
                 <h4 style="color: var(--color-orange); margin-top: 20px;">How to Register:</h4>
-                <p style="margin-bottom: 15px;">👉 **Register Here** via Google Form (Link Placeholder)</p>
-                <a href="#" class="btn" style="background-color: var(--color-orange); color: var(--color-dark-bg); box-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);">
+                <p style="margin-bottom: 15px;">👉 **Click the button below** to register via Google Form!</p>
+                <a href="https://forms.gle/ff5o9K8ae3QErN8E8" target="_blank" class="btn" style="background-color: var(--color-orange); color: var(--color-dark-bg); box-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);">
                     <i class="fas fa-link"></i> Go to Registration Form
                 </a>
-                
-                <p style="margin-top: 15px;">Scan the QR code below or visit the event desk to register your team.</p>
-                
-                <div class="qr-image-container">
-                    <img src="reg_qr.png" alt="Registration QR Code">
-                </div>
             </div>
         </div>
     </section>
 
     <hr>
 
-    <section id="payment">
+    <section id="contact">
         <div class="container">
-            <h2>💰 Payment & Facilities</h2>
+            <h2>📞 Contact & Venue</h2>
             
-            <div class="payment-info">
-                <h3>Payment Details 💳</h3>
-                <p style="font-size: 1.5rem; font-weight: bold; color: var(--color-orange); margin: 10px 0;">Registration Fee: ₹100 per team</p>
-                <p>Pay via **UPI** or at the **event desk**.</p>
-                
-                <div class="upi-qr-image-container">
-                    <img src="upi_qr.jpg" alt="UPI Payment QR Code">
-                    <p style="margin-top: 10px; color: var(--color-white); font-weight: normal; font-size: 0.9rem;">
-                        Sanjay Eshwaran, Indian Bank, UPI ID: sanjayeshwaran33-1@ok
+            <h3>Get In Touch</h3>
+            <ul class="contact-list">
+                <li>Lohendra: +91 97893 25983</li>
+                <li>Sanjay: +91 97891 04229</li>
+            </ul>
+
+            <p class="venue-info">
+                Venue: Seminar Hall 1 & 2 (ECE Block)<br>
+                SRM Valliammai Engineering College
+            </p>
+
+            <div class="map-placeholder">
+                [Google Map Placeholder for SRM VEC Location]
+            </div>
+            
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 SRM Valliammai Engineering College. All Rights Reserved.
+    </footer>
+
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Only prevent default for internal links that don't go to a full URL (like the registration button now does)
+                if (this.getAttribute('href').length > 1 && this.getAttribute('target') !== '_blank') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
